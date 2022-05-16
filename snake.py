@@ -26,7 +26,7 @@ class Snake:
     def __dict__(self) -> dict:
         return {'body': self.body, 'direction': self.direction, 'color': self.color}
   
-serverPort = 138
+serverPort = 5138
 boardSize = (25, 25)
 RED = (255,0,0)
 BLUE = (0,0,255)
