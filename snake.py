@@ -27,6 +27,6 @@ class Snake:
         return {'body': self.body, 'direction': self.direction, 'color': self.color}
   
 serverPort = 138
-boardSize = (25, 15)
+boardSize = (25, 25)
 RED = (255,0,0)
 BLUE = (0,0,255)

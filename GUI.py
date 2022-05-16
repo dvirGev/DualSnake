@@ -7,7 +7,7 @@ from snake import *
 pygame.init()
 # mixer.init()
 # font.init()
-WIDTH, HEIGHT = 500, 760
+WIDTH, HEIGHT = 760, 760
 BLACK = (0, 0, 0)
 apple = 'apple.png'
 
