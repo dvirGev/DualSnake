@@ -8,7 +8,7 @@ import threading
 theGameIsOn = True
 apple = [random.randint(0, boardSize[0]), random.randint(0, boardSize[1])]
 
-SERVER_ADDRESS = ('', serverPort)
+SERVER_ADDRESS = ("10.9.6.193", serverPort)
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 # Prepare a sever socket
 #Fill in start
@@ -69,7 +69,7 @@ def moveSnake(snake: Snake, apple = apple) -> None:
 def isSnakeLose(mySnake: Snake, otherSnake: Snake) -> bool:
     head = mySnake.body[-1]
     #the player out from board
-    if head[0] < 0 or head[0] >= boardSize[0] or head[1] < 0 or head[1] >= boardSize[1]:
+    if head[0] < 0 or head[0] >= boardSize[1] or head[1] < 0 or head[1] >= boardSize[0]:
         return True
     # #is the player get into other snake
     # if head in otherSnake.body:
