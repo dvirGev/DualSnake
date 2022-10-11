@@ -27,7 +27,7 @@ while isTheGameOn:
         isTheGameOn = False
     elif data != 'pass':
         clientSocket.sendto(data.encode(),(serverName, serverPort))
-    
+
 
 
 

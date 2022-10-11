@@ -8,7 +8,7 @@ import threading
 theGameIsOn = True
 apple = [random.randint(0, boardSize[0]), random.randint(0, boardSize[1])]
 
-SERVER_ADDRESS = ("10.9.6.193", serverPort)
+SERVER_ADDRESS = ("", serverPort)
 serverSocket = socket(AF_INET, SOCK_DGRAM)
 # Prepare a sever socket
 #Fill in start
